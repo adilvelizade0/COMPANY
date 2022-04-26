@@ -1,0 +1,202 @@
+footer .footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 0 30px 0;
+  background-color: #1e1e1e;
+}
+
+footer .footer-top .address h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-top .address p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-top .address span {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-top .newsletter h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+footer .footer-top .newsletter p {
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+footer .footer-top .newsletter form {
+  display: flex;
+  margin-top: 30px;
+}
+
+footer .footer-top .newsletter form input {
+  padding: 10px;
+  border: 1px solid #e0e5e2;
+  width: 20rem;
+  border: 0;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  outline: none;
+}
+
+footer .footer-top .newsletter form button {
+  padding: 10px 20px;
+  position: relative;
+  left: -20px;
+  border: 0;
+  background-color: #1ed33c;
+  color: white;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+footer .footer-top .newsletter form button:hover {
+  background-color: #2ae149;
+
+  cursor: pointer;
+}
+
+footer .footer-top .useful-links h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+footer .footer-top .our-services h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+footer .footer-top .useful-links ul li {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-top .useful-links ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .footer-top .useful-links ul li i {
+  margin-right: 5px;
+  color: #1ed33c;
+}
+
+footer .footer-top .our-services ul li {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .footer-top .our-services ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .footer-top .our-services ul li i {
+  margin-right: 5px;
+  color: #1ed33c;
+}
+
+footer .footer-top .address {
+  width: 19.125rem;
+  padding: 0 12px;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .useful-links {
+  width: 13.75rem;
+  padding: 0 12px;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .our-services {
+  width: 20.625rem;
+  padding: 0 12px;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .newsletter {
+  width: 27.5rem;
+  padding: 0 12px;
+  margin-bottom: 30px;
+}
+
+footer .footer-bottom {
+  padding: 1.5rem 3.75rem;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-bottom .copyright {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19.5px;
+}
+
+footer .footer-bottom .footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-bottom .footer-social-links .footer-social-link {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+footer .footer-bottom .footer-social-links .footer-social-link:hover {
+  background-color: #1bbd36;
+  cursor: pointer;
+}
+
+footer .footer-bottom .footer-social-links .footer-social-link i {
+  font-size: 18px;
+  color: white;
+}

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,9 +25,6 @@ header nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-header nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,14 +35,14 @@ header nav .container {
           align-items: center;
 }
 
-header nav .container .brand {
+header nav .brand {
   font-size: 28px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
 }
 
-header nav .container .left {
+header nav .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,23 +54,23 @@ header nav .container .left {
           align-items: center;
 }
 
-header nav .container .left .socials i {
+header nav .left .socials i {
   padding-left: 20px;
   color: #a0a0a0;
 }
 
-header nav .container .left .socials i:hover {
+header nav .left .socials i:hover {
   color: #1bbd36;
   cursor: pointer;
 }
 
-header nav .container .left .nav-items {
+header nav .left .nav-items {
   margin-right: 20px;
   padding-right: 20px;
   border-right: 1px solid #c4c4c4;
 }
 
-header nav .container .left .nav-items .nav-item {
+header nav .left .nav-items .nav-item {
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -78,7 +79,7 @@ header nav .container .left .nav-items .nav-item {
   color: black;
 }
 
-header nav .container .left .nav-items .nav-item:hover {
+header nav .left .nav-items .nav-item:hover {
   color: #1bbd36;
 }
 
@@ -153,5 +154,198 @@ header .header-hero .content button {
 header .header-hero .content button:hover {
   background-color: #1bbd36;
   cursor: pointer;
+}
+
+section .about-us {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+section .about-us .about-us-heading {
+  width: 41.25rem;
+  height: 18.875rem;
+  padding: 0 12px;
+}
+
+section .about-us .about-us-heading h1 {
+  color: #4d4643;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+
+section .about-us .about-us-heading p {
+  color: #4d4643;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0.5rem;
+}
+
+section .about-us .about-us-text {
+  width: 41.25rem;
+  height: 18.875rem;
+  padding: 0 12px;
+  color: #4d4643;
+  line-height: 24px;
+}
+
+section .about-us .about-us-text ul {
+  list-style: none;
+}
+
+section .about-us .about-us-text ul li {
+  padding: 8px 0;
+}
+
+section .about-us .about-us-text ul li i {
+  color: #1bbd36;
+}
+
+section .about-us .about-us-text p {
+  margin-bottom: 1rem;
+}
+
+section .services {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .services .service {
+  background-color: white;
+  padding: 70px 20px 80px 20px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 24px;
+}
+
+section .services .service h1 {
+  color: #111;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+}
+
+section .services .service p {
+  line-height: 24px;
+  font-size: 14px;
+  color: #4d4643;
+}
+
+section .services .service:hover {
+  -webkit-box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  border-color: #fff;
+  cursor: pointer;
+}
+
+section .services .service:hover .icon i {
+  color: white;
+}
+
+section .services .service:hover .icon svg path {
+  fill: #47aeff;
+}
+
+section .services .service .icon svg {
+  margin-left: 35px;
+}
+
+section .services .service .icon svg path {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .services .service .icon i {
+  font-size: 36px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #47aeff;
+  position: relative;
+  bottom: 35px;
+  right: 70px;
+}
+
+section .portfolio {
+  padding: 60px 0;
+}
+
+section .portfolio .portfolio-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+section .portfolio .portfolio-cards .portfolio-card {
+  width: 26rem;
+  height: 17.188rem;
+  padding: 0 12px;
+}
+
+section .portfolio .portfolio-cards .portfolio-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+section .portfolio .portfolio-tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 4rem;
+}
+
+section .portfolio .portfolio-tabs .tab {
+  padding: 8px 20px 10px 20px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+section .portfolio .portfolio-tabs .tab:hover {
+  background-color: #1bbd36;
+  color: #fff;
+}
+
+section .portfolio .portfolio-tabs .active {
+  background-color: #1bbd36;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

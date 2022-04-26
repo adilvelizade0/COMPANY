@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -25,51 +29,49 @@ header {
     position: sticky;
     top: 0;
 
-    .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      font-family: $font-robot;
+      letter-spacing: 0.5px;
+    }
+
+    .left {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 
-      .brand {
-        font-size: 28px;
-        font-weight: 700;
-        font-family: $font-robot;
-        letter-spacing: 0.5px;
-      }
+      .socials {
+        i {
+          padding-left: 20px;
+          color: #a0a0a0;
 
-      .left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .socials {
-          i {
-            padding-left: 20px;
-            color: #a0a0a0;
-
-            &:hover {
-              color: $color-green;
-              cursor: pointer;
-            }
+          &:hover {
+            color: $color-green;
+            cursor: pointer;
           }
         }
+      }
 
-        .nav-items {
-          margin-right: 20px;
-          padding-right: 20px;
-          border-right: 1px solid #c4c4c4;
+      .nav-items {
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1px solid #c4c4c4;
 
-          .nav-item {
-            padding: 10px 0 10px 30px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 600;
-            font-size: 13px;
-            text-decoration: none;
-            color: black;
+        .nav-item {
+          padding: 10px 0 10px 30px;
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 13px;
+          text-decoration: none;
+          color: black;
 
-            &:hover {
-              color: $color-green;
-            }
+          &:hover {
+            color: $color-green;
           }
         }
       }
@@ -129,6 +131,170 @@ header {
           background-color: $color-green;
           cursor: pointer;
         }
+      }
+    }
+  }
+}
+
+section {
+  .about-us {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $font-robot;
+
+    .about-us-heading {
+      width: 41.25rem;
+      height: 18.875rem;
+      padding: 0 12px;
+
+      h1 {
+        color: rgb(77, 70, 67);
+        font-weight: 700;
+        font-size: 42px;
+        margin-bottom: 20px;
+        line-height: 60px;
+      }
+
+      p {
+        color: rgb(77, 70, 67);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .about-us-text {
+      width: 41.25rem;
+      height: 18.875rem;
+      padding: 0 12px;
+      color: rgb(77, 70, 67);
+      line-height: 24px;
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 8px 0;
+          i {
+            color: $color-green;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .services {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .service {
+      background-color: white;
+      padding: 70px 20px 80px 20px;
+      transition: all ease-in-out 0.5s;
+      text-align: center;
+      font-family: $font-robot;
+      margin-top: 24px;
+
+      h1 {
+        color: #111;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 10px 0 15px 0;
+      }
+
+      p {
+        line-height: 24px;
+        font-size: 14px;
+        color: #4d4643;
+      }
+
+      &:hover {
+        box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+        border-color: #fff;
+        cursor: pointer;
+      }
+
+      &:hover .icon i {
+        color: white;
+      }
+
+      &:hover .icon svg path {
+        fill: #47aeff;
+      }
+
+      .icon {
+        svg {
+          margin-left: 35px;
+          path {
+            transition: 0.5s;
+          }
+        }
+        i {
+          font-size: 36px;
+          transition: 0.5s;
+          color: #47aeff;
+          position: relative;
+          bottom: 35px;
+          right: 70px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    padding: 60px 0;
+
+    .portfolio-cards {
+      display: flex;
+      justify-content: space-evenly;
+      align-self: center;
+      .portfolio-card {
+        width: 26rem;
+        height: 17.188rem;
+        padding: 0 12px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .portfolio-tabs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-family: $font-opens;
+      margin-bottom: 4rem;
+
+      .tab {
+        padding: 8px 20px 10px 20px;
+        font-weight: 400;
+        transition: all 0.3s;
+        font-size: 14px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+          background-color: #1bbd36;
+          color: #fff;
+        }
+      }
+      .active {
+        background-color: #1bbd36;
+        color: #fff;
       }
     }
   }
